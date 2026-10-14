@@ -13,5 +13,16 @@ from mangum import Mangum
 
 from stackradar_mcp.server import mcp
 
-app = mcp.streamable_http_app(json_response=True, stateless_http=True, host="0.0.0.0")
-handler = Mangum(app, lifespan="auto")
+
+
+def _build_app():
+    # Mangum runs the ASGI lifespan on every invocation, and the SDK's
+    # session manager can only run once, so build a fresh app (and manager) each time.
+    return mcp.streamable_http_app(json_response=True, stateless_http=True, host="0.0.0.0")
+
+
+app = _build_app()
+
+
+def handler(event, context):
+    return Mangum(_build_app(), lifespan="auto")(event, context)

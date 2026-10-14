@@ -142,3 +142,12 @@ Mention baselines stay put, so the weekly line still has a prior week.
 ## License
 
 MIT. See [LICENSE](LICENSE). GitHub shows it in the About section when this file sits at the repo root.
+
+## Live endpoint
+
+Deployed on AWS Lambda (ap-south-1) with a Function URL:
+
+- Health: https://54v2yptdgkqlv7bu2mfjbcjaaa0raiuw.lambda-url.ap-south-1.on.aws/health
+- MCP (Streamable HTTP): https://54v2yptdgkqlv7bu2mfjbcjaaa0raiuw.lambda-url.ap-south-1.on.aws/mcp
+
+Try it: `STACKRADAR_MCP_URL=https://54v2yptdgkqlv7bu2mfjbcjaaa0raiuw.lambda-url.ap-south-1.on.aws/mcp python clients/demo_client.py`
