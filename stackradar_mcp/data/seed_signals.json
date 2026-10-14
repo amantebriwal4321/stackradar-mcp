@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-14",
-  "note": "Saved snapshot for when GitHub, Hacker News, Dev.to, Reddit, or RSS does not answer. Star and fork figures are refreshed with scripts/build_seed.py --live-stars when the API allows. Mention counts are baselines so the weekly conversation line has a prior week to compare.",
+  "note": "Saved snapshot for when GitHub, Hacker News, Dev.to, Reddit, or RSS does not answer. Star and fork figures are refreshed with: python scripts/build_seed.py live. Mention counts are baselines so the weekly conversation line has a prior week to compare.",
   "formula": "StackRadar calculate_all_tool_scores",
   "tools": {
     "react": {

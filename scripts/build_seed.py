@@ -1,8 +1,9 @@
 """Write the offline snapshot used when a public API does not answer.
 
-Mention counts are editorial baselines for the voice demo, not a scrape.
-Star and fork counts start as round estimates. Pass --live-stars to replace
-those two fields from the public GitHub API and leave mentions alone.
+Mention counts are editorial baselines for the voice demo.
+Star and fork counts start as round estimates. Run the script with the
+word live to replace those two fields from the public GitHub API.
+Mentions stay as they are.
 """
 
 from __future__ import annotations
@@ -14,37 +15,37 @@ from pathlib import Path
 
 # slug, stars, forks, 7d mentions (hn, devto, reddit, news), previous 7d mentions
 ROWS: list[tuple] = [
-    ("react", 238000, 49000, (6, 5, 5, 2), (6, 5, 4, 2)),
-    ("tailwindcss", 86000, 4500, (2, 3, 2, 1), (2, 3, 2, 1)),
-    ("vite", 70000, 6500, (2, 2, 2, 1), (2, 2, 1, 1)),
-    ("vuejs", 48000, 8000, (2, 2, 2, 1), (2, 2, 2, 1)),
-    ("svelte", 80000, 4300, (3, 2, 2, 1), (2, 1, 1, 0)),
-    ("nextjs", 130000, 28000, (4, 4, 3, 1), (4, 3, 3, 1)),
-    ("fastapi", 80000, 7000, (3, 4, 2, 1), (2, 3, 2, 1)),
-    ("astro", 48000, 2600, (2, 2, 1, 1), (1, 1, 0, 0)),
-    ("trpc", 35000, 1300, (1, 1, 1, 0), (1, 1, 1, 0)),
-    ("bun", 75000, 3000, (3, 2, 2, 1), (1, 1, 0, 0)),
-    ("deno", 100000, 5500, (1, 1, 1, 0), (1, 1, 1, 0)),
-    ("prisma", 40000, 1600, (1, 2, 1, 0), (1, 2, 1, 0)),
-    ("pytorch", 86000, 23000, (4, 3, 3, 1), (4, 3, 2, 1)),
-    ("tensorflow", 187000, 74000, (3, 2, 2, 1), (3, 2, 2, 1)),
-    ("transformers", 140000, 28000, (4, 3, 2, 1), (3, 3, 2, 1)),
-    ("langchain", 95000, 15500, (4, 3, 3, 1), (3, 2, 2, 1)),
-    ("ollama", 105000, 8500, (6, 4, 4, 2), (1, 1, 1, 0)),
-    ("supabase", 78000, 8000, (2, 2, 2, 1), (2, 2, 1, 1)),
-    ("terraform", 44000, 9700, (2, 1, 2, 1), (2, 1, 2, 1)),
-    ("kubernetes", 112000, 40000, (3, 2, 3, 1), (3, 2, 3, 1)),
-    ("docker", 69000, 18700, (3, 2, 3, 1), (3, 2, 2, 1)),
-    ("grafana", 66000, 12300, (1, 1, 2, 0), (1, 1, 2, 0)),
-    ("prometheus", 56000, 9300, (1, 1, 1, 0), (1, 1, 1, 0)),
-    ("rust", 100000, 13000, (4, 2, 3, 1), (3, 2, 3, 1)),
-    ("go", 127000, 18000, (3, 2, 2, 1), (3, 2, 2, 1)),
-    ("wireshark", 8000, 1800, (1, 0, 1, 0), (1, 0, 1, 0)),
-    ("metasploit", 35000, 14000, (1, 0, 1, 0), (1, 0, 1, 0)),
-    ("owasp-zap", 13000, 2300, (1, 1, 1, 0), (1, 0, 1, 0)),
-    ("hardhat", 7500, 1500, (1, 1, 1, 0), (1, 1, 1, 0)),
-    ("foundry", 8500, 900, (2, 1, 1, 0), (1, 1, 1, 0)),
-    ("ethersjs", 8000, 2000, (1, 1, 1, 0), (1, 1, 1, 0)),
+    ("react", 251010, 51505, (6, 5, 5, 2), (6, 5, 4, 2)),
+    ("tailwindcss", 97862, 8492, (2, 3, 2, 1), (2, 3, 2, 1)),
+    ("vite", 83287, 8855, (2, 2, 2, 1), (2, 2, 1, 1)),
+    ("vuejs", 54617, 9254, (2, 2, 2, 1), (2, 2, 2, 1)),
+    ("svelte", 88347, 8208, (3, 2, 2, 1), (2, 1, 1, 0)),
+    ("nextjs", 143002, 34915, (4, 4, 3, 1), (4, 3, 3, 1)),
+    ("fastapi", 103081, 10042, (3, 4, 2, 1), (2, 3, 2, 1)),
+    ("astro", 63230, 3848, (2, 2, 1, 1), (1, 1, 0, 0)),
+    ("trpc", 40703, 1710, (1, 1, 1, 0), (1, 1, 1, 0)),
+    ("bun", 96233, 5119, (3, 2, 2, 1), (1, 1, 0, 0)),
+    ("deno", 108676, 6467, (1, 1, 1, 0), (1, 1, 1, 0)),
+    ("prisma", 47692, 2550, (1, 2, 1, 0), (1, 2, 1, 0)),
+    ("pytorch", 104664, 32459, (4, 3, 3, 1), (4, 3, 2, 1)),
+    ("tensorflow", 200964, 79416, (3, 2, 2, 1), (3, 2, 2, 1)),
+    ("transformers", 167674, 34880, (4, 3, 2, 1), (3, 3, 2, 1)),
+    ("langchain", 147803, 24797, (4, 3, 3, 1), (3, 2, 2, 1)),
+    ("ollama", 183130, 18269, (6, 4, 4, 2), (1, 1, 1, 0)),
+    ("supabase", 111532, 16824, (2, 2, 2, 1), (2, 2, 1, 1)),
+    ("terraform", 49911, 10642, (2, 1, 2, 1), (2, 1, 2, 1)),
+    ("kubernetes", 128211, 47064, (3, 2, 3, 1), (3, 2, 3, 1)),
+    ("docker", 72190, 19236, (3, 2, 3, 1), (3, 2, 2, 1)),
+    ("grafana", 77269, 14850, (1, 1, 2, 0), (1, 1, 2, 0)),
+    ("prometheus", 66547, 10915, (1, 1, 1, 0), (1, 1, 1, 0)),
+    ("rust", 119820, 18662, (4, 2, 3, 1), (3, 2, 3, 1)),
+    ("go", 139157, 22331, (3, 2, 2, 1), (3, 2, 2, 1)),
+    ("wireshark", 10003, 2230, (1, 0, 1, 0), (1, 0, 1, 0)),
+    ("metasploit", 39149, 15000, (1, 0, 1, 0), (1, 0, 1, 0)),
+    ("owasp-zap", 15933, 2668, (1, 1, 1, 0), (1, 0, 1, 0)),
+    ("hardhat", 8514, 1733, (1, 1, 1, 0), (1, 1, 1, 0)),
+    ("foundry", 10667, 2671, (2, 1, 1, 0), (1, 1, 1, 0)),
+    ("ethersjs", 8717, 2132, (1, 1, 1, 0), (1, 1, 1, 0)),
 ]
 
 
@@ -99,7 +100,7 @@ def build(live_stars: bool) -> dict:
         "as_of": "2026-10-14",
         "note": (
             "Saved snapshot for when GitHub, Hacker News, Dev.to, Reddit, or RSS does not answer. "
-            "Star and fork figures are refreshed with scripts/build_seed.py --live-stars when the API allows. "
+            "Star and fork figures are refreshed with: python scripts/build_seed.py live. "
             "Mention counts are baselines so the weekly conversation line has a prior week to compare."
         ),
         "formula": "StackRadar calculate_all_tool_scores",
@@ -109,9 +110,9 @@ def build(live_stars: bool) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--live-stars", action="store_true")
+    parser.add_argument("refresh", nargs="?", default="keep")
     args = parser.parse_args()
-    payload = build(args.live_stars)
+    payload = build(args.refresh == "live")
     destination = Path(__file__).resolve().parents[1] / "stackradar_mcp" / "data" / "seed_signals.json"
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
