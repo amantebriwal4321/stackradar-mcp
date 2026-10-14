@@ -1,0 +1,9 @@
+.venv
+.git
+.pytest_cache
+.cache
+.aws-sam
+agent-tools
+**/__pycache__
+*.egg-info
+.env

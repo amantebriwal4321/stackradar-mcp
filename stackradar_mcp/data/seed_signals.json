@@ -1,0 +1,1495 @@
+{
+  "as_of": "2026-10-14",
+  "note": "Saved snapshot for when GitHub, Hacker News, Dev.to, Reddit, or RSS does not answer. Star and fork figures are refreshed with scripts/build_seed.py --live-stars when the API allows. Mention counts are baselines so the weekly conversation line has a prior week to compare.",
+  "formula": "StackRadar calculate_all_tool_scores",
+  "tools": {
+    "react": {
+      "stars": 251010,
+      "forks": 51505,
+      "windows": {
+        "24h": {
+          "hn": 2,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 6,
+          "devto": 5,
+          "reddit": 5,
+          "news": 2
+        },
+        "30d": {
+          "hn": 10,
+          "devto": 8,
+          "reddit": 8,
+          "news": 3
+        }
+      },
+      "previous": {
+        "stars": 251010,
+        "forks": 51505,
+        "windows": {
+          "24h": {
+            "hn": 2,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "7d": {
+            "hn": 6,
+            "devto": 5,
+            "reddit": 4,
+            "news": 2
+          },
+          "30d": {
+            "hn": 10,
+            "devto": 8,
+            "reddit": 6,
+            "news": 3
+          }
+        }
+      }
+    },
+    "tailwindcss": {
+      "stars": 97862,
+      "forks": 8492,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 1,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 3,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 5,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 97862,
+        "forks": 8492,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 3,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 5,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "vite": {
+      "stars": 83287,
+      "forks": 8855,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 83287,
+        "forks": 8855,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 1,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 3,
+            "reddit": 2,
+            "news": 2
+          }
+        }
+      }
+    },
+    "vuejs": {
+      "stars": 54617,
+      "forks": 9254,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 54617,
+        "forks": 9254,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 3,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "svelte": {
+      "stars": 88347,
+      "forks": 8208,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 88347,
+        "forks": 8208,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "nextjs": {
+      "stars": 143002,
+      "forks": 34915,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 4,
+          "devto": 4,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 6,
+          "devto": 6,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 143002,
+        "forks": 34915,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "7d": {
+            "hn": 4,
+            "devto": 3,
+            "reddit": 3,
+            "news": 1
+          },
+          "30d": {
+            "hn": 6,
+            "devto": 5,
+            "reddit": 5,
+            "news": 2
+          }
+        }
+      }
+    },
+    "fastapi": {
+      "stars": 103081,
+      "forks": 10042,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 4,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 6,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 103081,
+        "forks": 10042,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 3,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 5,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "astro": {
+      "stars": 63230,
+      "forks": 3848,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 1,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 3,
+          "reddit": 2,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 63230,
+        "forks": 3848,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 0,
+            "news": 0
+          }
+        }
+      }
+    },
+    "trpc": {
+      "stars": 40703,
+      "forks": 1710,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 40703,
+        "forks": 1710,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "bun": {
+      "stars": 96233,
+      "forks": 5119,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 96233,
+        "forks": 5119,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 0,
+            "news": 0
+          }
+        }
+      }
+    },
+    "deno": {
+      "stars": 108676,
+      "forks": 6467,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 108676,
+        "forks": 6467,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "prisma": {
+      "stars": 47692,
+      "forks": 2550,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 2,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 3,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 47692,
+        "forks": 2550,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 2,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 3,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "pytorch": {
+      "stars": 104664,
+      "forks": 32459,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 4,
+          "devto": 3,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 6,
+          "devto": 5,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 104664,
+        "forks": 32459,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 4,
+            "devto": 3,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 6,
+            "devto": 5,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "tensorflow": {
+      "stars": 200964,
+      "forks": 79416,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 200964,
+        "forks": 79416,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "transformers": {
+      "stars": 167674,
+      "forks": 34880,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 4,
+          "devto": 3,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 6,
+          "devto": 5,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 167674,
+        "forks": 34880,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 3,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 5,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "langchain": {
+      "stars": 147803,
+      "forks": 24797,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 4,
+          "devto": 3,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 6,
+          "devto": 5,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 147803,
+        "forks": 24797,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "ollama": {
+      "stars": 183130,
+      "forks": 18269,
+      "windows": {
+        "24h": {
+          "hn": 2,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 6,
+          "devto": 4,
+          "reddit": 4,
+          "news": 2
+        },
+        "30d": {
+          "hn": 10,
+          "devto": 6,
+          "reddit": 6,
+          "news": 3
+        }
+      },
+      "previous": {
+        "stars": 183130,
+        "forks": 18269,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "supabase": {
+      "stars": 111532,
+      "forks": 16824,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 111532,
+        "forks": 16824,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 1,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 3,
+            "reddit": 2,
+            "news": 2
+          }
+        }
+      }
+    },
+    "terraform": {
+      "stars": 49911,
+      "forks": 10642,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 1,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 49911,
+        "forks": 10642,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 2,
+            "devto": 1,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "kubernetes": {
+      "stars": 128211,
+      "forks": 47064,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 128211,
+        "forks": 47064,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 1,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 3,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 5,
+            "news": 2
+          }
+        }
+      }
+    },
+    "docker": {
+      "stars": 72190,
+      "forks": 19236,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 72190,
+        "forks": 19236,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "grafana": {
+      "stars": 77269,
+      "forks": 14850,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 2,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 3,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 77269,
+        "forks": 14850,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 2,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 3,
+            "news": 0
+          }
+        }
+      }
+    },
+    "prometheus": {
+      "stars": 66547,
+      "forks": 10915,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 66547,
+        "forks": 10915,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "rust": {
+      "stars": 119820,
+      "forks": 18662,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 1,
+          "news": 0
+        },
+        "7d": {
+          "hn": 4,
+          "devto": 2,
+          "reddit": 3,
+          "news": 1
+        },
+        "30d": {
+          "hn": 6,
+          "devto": 3,
+          "reddit": 5,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 119820,
+        "forks": 18662,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 1,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 3,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 5,
+            "news": 2
+          }
+        }
+      }
+    },
+    "go": {
+      "stars": 139157,
+      "forks": 22331,
+      "windows": {
+        "24h": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 2,
+          "news": 1
+        },
+        "30d": {
+          "hn": 5,
+          "devto": 3,
+          "reddit": 3,
+          "news": 2
+        }
+      },
+      "previous": {
+        "stars": 139157,
+        "forks": 22331,
+        "windows": {
+          "24h": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 3,
+            "devto": 2,
+            "reddit": 2,
+            "news": 1
+          },
+          "30d": {
+            "hn": 5,
+            "devto": 3,
+            "reddit": 3,
+            "news": 2
+          }
+        }
+      }
+    },
+    "wireshark": {
+      "stars": 10003,
+      "forks": 2230,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 0,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 10003,
+        "forks": 2230,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 0,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "metasploit": {
+      "stars": 39149,
+      "forks": 15000,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 0,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 0,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 39149,
+        "forks": 15000,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 0,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "owasp-zap": {
+      "stars": 15933,
+      "forks": 2668,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 15933,
+        "forks": 2668,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 0,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 0,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "hardhat": {
+      "stars": 8514,
+      "forks": 1733,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 8514,
+        "forks": 1733,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "foundry": {
+      "stars": 10667,
+      "forks": 2671,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 2,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 3,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 10667,
+        "forks": 2671,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    },
+    "ethersjs": {
+      "stars": 8717,
+      "forks": 2132,
+      "windows": {
+        "24h": {
+          "hn": 0,
+          "devto": 0,
+          "reddit": 0,
+          "news": 0
+        },
+        "7d": {
+          "hn": 1,
+          "devto": 1,
+          "reddit": 1,
+          "news": 0
+        },
+        "30d": {
+          "hn": 2,
+          "devto": 2,
+          "reddit": 2,
+          "news": 0
+        }
+      },
+      "previous": {
+        "stars": 8717,
+        "forks": 2132,
+        "windows": {
+          "24h": {
+            "hn": 0,
+            "devto": 0,
+            "reddit": 0,
+            "news": 0
+          },
+          "7d": {
+            "hn": 1,
+            "devto": 1,
+            "reddit": 1,
+            "news": 0
+          },
+          "30d": {
+            "hn": 2,
+            "devto": 2,
+            "reddit": 2,
+            "news": 0
+          }
+        }
+      }
+    }
+  }
+}

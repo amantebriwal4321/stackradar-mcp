@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  StackRadar MCP on a Lambda Function URL. Streamable HTTP with a single JSON
+  body per request and no session, which fits a buffered function URL.
+
+Parameters:
+  GithubToken:
+    Type: String
+    Default: ""
+    NoEcho: true
+    Description: Optional GitHub token for a higher API rate limit. Leave empty to use the public unauthenticated limit.
+
+Globals:
+  Function:
+    Timeout: 29
+    MemorySize: 512
+    Runtime: python3.12
+    Architectures:
+      - x86_64
+
+Resources:
+  StackRadarMcpFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: stackradar-mcp
+      Handler: stackradar_mcp.lambda_handler.handler
+      CodeUri: .
+      Description: StackRadar momentum tools over MCP Streamable HTTP
+      Environment:
+        Variables:
+          STACKRADAR_MODE: auto
+          STACKRADAR_CACHE_DIR: /tmp/stackradar-cache
+          GITHUB_TOKEN: !Ref GithubToken
+      FunctionUrlConfig:
+        AuthType: NONE
+        InvokeMode: BUFFERED
+        Cors:
+          AllowOrigins:
+            - "*"
+          AllowMethods:
+            - GET
+            - POST
+            - DELETE
+          AllowHeaders:
+            - content-type
+            - accept
+            - mcp-protocol-version
+            - mcp-session-id
+            - last-event-id
+      Policies:
+        - AWSLambdaBasicExecutionRole
+    Metadata:
+      BuildMethod: python3.12
+
+Outputs:
+  FunctionUrl:
+    Description: Base URL. The MCP endpoint is this URL plus mcp.
+    Value: !GetAtt StackRadarMcpFunctionUrl.FunctionUrl
+  HealthPath:
+    Description: Append health to the function URL for the liveness check.
+    Value: health
